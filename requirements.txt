@@ -1,7 +1,5 @@
 streamlit
-tensorflow
 sentence-transformers
-torch
 numpy
 pandas
 scikit-learn
