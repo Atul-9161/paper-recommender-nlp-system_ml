@@ -1,30 +1,68 @@
-# Research-Papers-Recommendation-System-and-Subject-Area-Prediction-Using-Deep-Learning-and-LLMS
-# Overview
-This repository hosts a machine learning project that encompasses two key functionalities: a research papers recommendation system and subject area prediction. The goal of the project is to provide users with tailored recommendations based on their preferences and to predict the subject area of research papers.
+# Research Paper Recommender System & Subject Area Prediction using Deep Learning & NLP
 
-# Features
-# Research Papers Recommendation System
-Leveraging sentence transformers using sentence embedding with cosine similarity techniques to recommend research papers based on user preferences and similarities to other vectors.
+---
 
-# Deep Learning Model: 
-Implementing a deep learning model to capture complex patterns implementing MLP to predict subject area of a paper.
+## 👨‍💻 Overview
 
-# Subject Area Prediction
-Text Classification: Utilizing natural language processing techniques for classifying research papers into subject areas.
+This project is a machine learning based system that performs two main tasks:
 
-# How to use:
-Prepare your research papers dataset with titles, abstracts, and corresponding subject areas.
-Text Classification:
+1. Recommends similar research papers based on input title and abstract  
+2. Predicts the subject area of a research paper  
 
-Utilize the  notebook to train models for predicting subject areas.
-# Results
-Research Papers Recommendation
-Recommending top K papers.
-The deep learning model improved recommendations, yielding an accuracy of 99%.
-Subject Area Prediction
+The goal is to help users quickly find related research work and automatically classify papers into relevant academic domains.
 
-License
-This project is licensed under the NOOR SAEED
+---
 
-Acknowledgments
-Mention any credits or acknowledgments for third-party tools, libraries, or resources used in the project.
+## 🎯 Key Features
+
+### 📚 Research Paper Recommendation System
+- Uses Sentence Transformers to convert text into embeddings  
+- Applies cosine similarity to find semantically similar papers  
+- Returns top-K most relevant research papers  
+
+---
+
+### 🧠 Subject Area Prediction
+- Uses NLP-based text processing  
+- Implements a deep learning MLP model for classification  
+- Predicts subject categories like:
+  - Computer Science  
+  - NLP  
+  - Computer Vision  
+  - AI / ML  
+
+---
+
+## ⚙️ How it works
+
+1. Input research paper title and abstract  
+2. Text is converted into vector embeddings  
+3. Similarity is calculated using cosine similarity  
+4. Top matching papers are recommended  
+5. A trained deep learning model predicts subject area  
+
+---
+
+## 🧰 Tech Stack
+
+- Python  
+- Machine Learning  
+- Deep Learning (MLP)  
+- NLP (Natural Language Processing)  
+- Sentence Transformers  
+- Scikit-learn  
+- TensorFlow / Keras  
+- Streamlit (for UI)
+
+---
+
+## 📊 Results
+
+- High-quality paper recommendations using semantic similarity  
+- Deep learning model achieves strong classification performance (~99% accuracy in trained setup)  
+- Efficient subject area prediction for research classification  
+
+---
+
+## 📂 Project Workflow
+
