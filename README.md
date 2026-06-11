@@ -1,68 +1,201 @@
-# Research Paper Recommender System & Subject Area Prediction using Deep Learning & NLP
+# Research Paper Recommender & Subject Classification System
+
+An NLP-powered system that recommends semantically similar research papers and automatically predicts the subject area of a research paper using Deep Learning and Sentence Transformers.
+
+## Demo
+
+<p align="center">
+  <img src="demo.gif" width="900">
+</p>
+
+> Add your recorded GIF as `demo.gif` in the repository root.
 
 ---
 
-## 👨‍💻 Overview
+## Overview
 
-This project is a machine learning based system that performs two main tasks:
+This project combines **Semantic Search** and **Multi-Label Text Classification** to help researchers discover relevant academic papers and automatically categorize them into research domains.
 
-1. Recommends similar research papers based on input title and abstract  
-2. Predicts the subject area of a research paper  
+The system provides:
 
-The goal is to help users quickly find related research work and automatically classify papers into relevant academic domains.
-
----
-
-## 🎯 Key Features
-
-### 📚 Research Paper Recommendation System
-- Uses Sentence Transformers to convert text into embeddings  
-- Applies cosine similarity to find semantically similar papers  
-- Returns top-K most relevant research papers  
+* Research Paper Recommendation using Sentence Transformers
+* Semantic Similarity Search with Cosine Similarity
+* Multi-Label Subject Classification using Deep Learning
+* Interactive Streamlit Web Interface
 
 ---
 
-### 🧠 Subject Area Prediction
-- Uses NLP-based text processing  
-- Implements a deep learning MLP model for classification  
-- Predicts subject categories like:
-  - Computer Science  
-  - NLP  
-  - Computer Vision  
-  - AI / ML  
+## Features
+
+### Research Paper Recommendation
+
+* Converts research paper text into semantic embeddings using Sentence Transformers.
+* Computes cosine similarity between papers.
+* Retrieves the Top-5 most relevant research papers.
+* Supports semantic matching beyond simple keyword search.
+
+### Subject Area Classification
+
+* Processes research paper abstracts using NLP techniques.
+* Uses a TensorFlow/Keras-based deep learning model.
+* Predicts one or more subject areas from paper abstracts.
+
+Example subject areas:
+
+* Machine Learning
+* Artificial Intelligence
+* Natural Language Processing (NLP)
+* Computer Vision
+* Data Mining
 
 ---
 
-## ⚙️ How it works
+## System Architecture
 
-1. Input research paper title and abstract  
-2. Text is converted into vector embeddings  
-3. Similarity is calculated using cosine similarity  
-4. Top matching papers are recommended  
-5. A trained deep learning model predicts subject area  
+### Recommendation Pipeline
+
+```text
+Paper Title
+     │
+     ▼
+Sentence Transformer
+     │
+     ▼
+Vector Embedding
+     │
+     ▼
+Cosine Similarity
+     │
+     ▼
+Top-5 Recommended Papers
+```
+
+### Classification Pipeline
+
+```text
+Paper Abstract
+      │
+      ▼
+TextVectorization
+      │
+      ▼
+Deep Learning Model
+      │
+      ▼
+Predicted Subject Areas
+```
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
-- Python  
-- Machine Learning  
-- Deep Learning (MLP)  
-- NLP (Natural Language Processing)  
-- Sentence Transformers  
-- Scikit-learn  
-- TensorFlow / Keras  
-- Streamlit (for UI)
+### Languages
+
+* Python
+
+### Machine Learning & NLP
+
+* TensorFlow
+* Keras
+* Sentence Transformers
+* Scikit-Learn
+* NumPy
+
+### Deep Learning
+
+* Multi-Layer Perceptron (MLP)
+* Text Embeddings
+* Multi-Label Classification
+
+### Deployment
+
+* Streamlit
 
 ---
 
-## 📊 Results
+## Project Structure
 
-- High-quality paper recommendations using semantic similarity  
-- Deep learning model achieves strong classification performance (~99% accuracy in trained setup)  
-- Efficient subject area prediction for research classification  
+```text
+research-paper-recommender-ml/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── models/
+│   ├── embeddings.pkl
+│   ├── model.h5
+│   ├── rec_model.pkl
+│   ├── sentences.pkl
+│   ├── text_vectorizer_config.pkl
+│   ├── text_vectorizer_weights.pkl
+│   └── vocab.pkl
+```
 
 ---
 
-## 📂 Project Workflow
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Atul-9161/paper-recommender-nlp-system_ml.git
+cd paper-recommender-nlp-system_ml
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## Example
+
+### Input Title
+
+```text
+Graph Neural Networks for Learning on Structured Data
+```
+
+### Output Recommendations
+
+```text
+1. A Generalization of Convolutional Neural Networks to Graph-Structured Data
+2. Deep Loopy Neural Network Model for Graph Structured Data Representation Learning
+3. IPC: A Benchmark Data Set for Learning with Graph-Structured Data
+4. Deep Convolutional Networks on Graph-Structured Data
+5. Learning Discrete Structures for Graph Neural Networks
+```
+
+---
+
+## Future Improvements
+
+* FAISS-based similarity search for faster retrieval.
+* Transformer-based subject classifier (BERT/RoBERTa).
+* Research paper PDF upload support.
+* Research paper metadata filtering.
+* Cloud deployment.
+
+---
+
+## Author
+
+**Atul Mishra**
+
+GitHub: https://github.com/Atul-9161
+
+---
+
+## License
+
+This project is developed for educational and research purposes.
 
