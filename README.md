@@ -2,7 +2,6 @@
 
 An NLP-powered system that recommends semantically similar research papers and automatically predicts the subject area of a research paper using Deep Learning and Sentence Transformers.
 
-## Demo
 
 ## Demo
 
