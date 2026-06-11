@@ -4,11 +4,13 @@ An NLP-powered system that recommends semantically similar research papers and a
 
 ## Demo
 
+## Demo
+
 <p align="center">
-  <img src="demo.gif" width="900">
+  <img src="demo.gif.gif" width="900">
 </p>
 
-> Add your recorded GIF as `demo.gif` in the repository root.
+
 
 ---
 
